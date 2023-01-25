@@ -1,1 +1,2 @@
-/target
+target/*
+./hello_cargo/target/*
