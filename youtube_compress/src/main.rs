@@ -10,7 +10,7 @@ use std::time::Instant;
 
 fn main() {
     if args().len() !=3 {
-        eprintln!("Usage: `source` `target`");
+        eprintln!("Usage: cargo run `source` `target`");
         return;
     }
 
@@ -27,3 +27,5 @@ fn main() {
     println!("Target len:{:?}",output.metadata().unwrap().len());
     println!("Elapsed: {:?}", start.elapsed());
 }
+
+// unwrap : ok 인경우에는 그냥 지나가고 err 인 경우에는 패닉이 나게됨 비슷한 케이스로 unwrap_or_else panic shortcut 이며 Result를 반환하는 곳에서 사용가능하다.
